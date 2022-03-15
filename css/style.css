@@ -197,6 +197,7 @@ p{
 .twitter {
 	margin-bottom: 37px;
 }
+
 .twitter-title {
 	margin-bottom: 27px;
 	font-size: 18px;
@@ -216,6 +217,31 @@ p{
 	font-weight: 400;
 	font-style: italic;
 	color: #848789;
+	max-width: 1150px;
+	text-align: center;
+}
+
+#first-twit, #second-twit, #third-twit{
+	display: none;
+}
+
+.twitter-titile__twitter-slider{
+	display: flex;
+	gap: 7px;
+	margin-top: 100px;
+}
+
+.twitter-slider__circle{
+	display: block;
+	width: 11px;
+	height: 11px;
+	border-radius: 50%;
+	border: 1px solid #a9afb3;
+	cursor: pointer;
+}
+
+.twitter-slider__circle-selected{
+	background: #a9afb3;
 }
 
 .block__6{
@@ -332,6 +358,13 @@ p{
 	font-weight: 400;
 	font-style: italic;
 	color: #929292;
+	box-sizing: border-box;
+	padding-left: 27px;
+}
+
+.input-text::placeholder{
+	color: #929292;
+	opacity: 0.5;
 }
 .go-btn {
 	width: 126px;
