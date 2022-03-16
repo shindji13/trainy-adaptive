@@ -20,6 +20,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
 
 body{
 	font-family: Lato;
+	min-width: 327px;
 }
 
 
@@ -141,6 +142,7 @@ p{
 /* block__1 */
 
 .block__1 {
+	padding: 30px;
 	display: flex;
 	flex-direction: column;
 	width: 100%;
@@ -201,6 +203,7 @@ p{
 /* block__5 */
 
 .block__5 {
+	padding: 30px;
 	display: flex;
 	flex-direction: column;
 	width: 100%;
@@ -209,6 +212,11 @@ p{
 	align-items: center;
 	justify-content: center;
 }
+
+.block__5-container{
+	max-width: 1000px;
+}
+
 .twitter {
 	margin-bottom: 37px;
 }
@@ -358,7 +366,7 @@ p{
 }
 .input-text {
 	padding: 10px;
-	text-align: center;
+	text-align: center; 
 	width: 400px;
 	height: 69px;
 	background-color: #ffffff;
@@ -396,6 +404,7 @@ p{
 /* footer */
 
 .footer {
+	padding: 15px;
 	height: 250px;
 	background-color: #f7f7f7;
 	width: 100%;
@@ -423,6 +432,25 @@ p{
 }
 .signature-discription {
 	margin-right: 9px;
+}
+
+.address{
+	max-width: 240px;
+}
+
+.footer-title{
+	font-size: 16px;
+	line-height: 17px;
+	font-weight: 700;
+	color: #848789;
+}
+
+.footer-title-discription{
+	color: #848789;
+	font-family: Lato;
+	font-size: 13.9px;
+	font-weight: 400;
+	font-style: italic;
 }
 
 
@@ -463,6 +491,19 @@ p{
 	.input-text, .go-btn{
 		min-width: 300px;
 		width: 100%;
+	}
+
+	.container{
+		flex-direction: column;
+		justify-content: space-between;
+	}
+
+	.address{
+		text-align: center;
+	}
+
+	.footer{
+		align-items: stretch;
 	}
 }
 
